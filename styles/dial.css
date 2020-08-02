@@ -1,0 +1,40 @@
+.dial {
+    width:10rem;
+    height: 14rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .dial ol {
+    width: calc(100%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgb(207, 207, 207);
+    cursor: pointer;
+  }
+  
+  .dial ol:hover {
+    outline-color: greenyellow;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+  
+  .dial-active {
+    background-color: lime;
+  }
+  
+  .dial-container {
+    padding-left: 1rem;;
+  }
+  
+  .dial-container span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+  }

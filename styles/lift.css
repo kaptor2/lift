@@ -1,0 +1,32 @@
+.lift-container{
+  height: 100%;
+  width: 50px;
+  outline: 1px solid gray;
+}
+
+.lift {
+  position: relative;
+  /* меняем этажность, заменив последнюю цифру на  нужный*/
+  outline: 1px solid gray;
+  height: calc(100% / 9);
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lift:before, .lift:after {
+  content: "";
+  width:1px;
+  height: 100%;
+  outline: 1px solid whitesmoke;
+  background-color: black;
+  -moz-transition: width 1s;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.lift-off:before, .lift-off:after{
+  width: 50%;
+}
+
